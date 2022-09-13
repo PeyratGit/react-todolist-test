@@ -1,6 +1,7 @@
 # Features
  - See your todolist
  - Add a task
+ - Mark a task as done
  - Delete a task
  - See the details of your task
 
