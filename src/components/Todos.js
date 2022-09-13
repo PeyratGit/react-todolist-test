@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
 import { Link, Outlet } from 'react-router-dom'
-import Form from './components/Form'
+import Form from './Form'
 import '../styles/Todos.css'
 
 const Todos = () => {

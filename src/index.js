@@ -4,11 +4,11 @@ import './index.css';
 import App from './App';
 import Todos from './components/Todos'
 import Todo from './components/Todo'
-import { BrowerRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowerRouter>
+  <BrowserRouter>
     <Routes>
       <Route path="/" element={<App/>}>
         <Route path="todos" element={<Todos />}/>
@@ -16,7 +16,7 @@ root.render(
         <Route path="*" element={<div><p>Oops, nothing to see here sorry</p></div>}/>
       </Route>
     </Routes>
-  </BrowerRouter>
+  </BrowserRouter>
 );
 
 // If you want to start measuring performance in your app, pass a function
