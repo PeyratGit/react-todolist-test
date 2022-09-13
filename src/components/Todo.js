@@ -1,5 +1,6 @@
 import React from 'react'
 import { useLocation } from "react-router-dom";
+import '../styles/Todo.css'
 
 const Todo = () => {
   const location = useLocation()

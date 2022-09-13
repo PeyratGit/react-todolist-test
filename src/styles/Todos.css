@@ -1,0 +1,112 @@
+.main-container {
+  margin-top: 20px;
+  width: 90%;
+  height: min-content;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  background-color: rgba(0, 10, 207, 0.5);
+  padding: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+  min-height: 125px;
+  max-height: 300px;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+form input {
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 5px;
+  width: 94%;
+  max-width: 330px;
+}
+
+form input:focus {
+  outline: 1px solid blue;
+}
+
+form button {
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  border: 1px solid white;
+  background-color: rgb(22, 223, 22);
+  color: white;
+  font-weight: bolder;
+}
+
+form button:active {
+  transform: scale(0.95);
+}
+
+.todos-container {
+  width: 100%;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.todo-list-item {
+  border: 5px solid black;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: rgb(71, 71, 205);
+  align-items: center;
+  transition: all ease-in-out .2s;
+}
+
+.todo-list-item:hover {
+  transform: scale(1.03);
+}
+
+.todo-list-item a {
+  color: white;
+  font-weight: 600;
+}
+
+.todo-list-item-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 40%;
+  margin-left: auto;
+}
+
+.todo-list-item button {
+  border: 1px solid white;
+  padding: 10px 5px 10px 5px;
+  color: white;
+  font-weight: bold;
+}
+
+.todo-list-item button:active {
+  transform: scale(0.95);
+}
+
+.todo-list-item .mark-as-done {
+  background-color: rgb(36, 183, 36);
+}
+
+.todo-list-item .delete {
+  background-color: red;
+}
+
+.todo-list-item.done {
+  opacity: 50%;
+}
+
+.todo-list-item.done .todo-list-item-title {
+  text-decoration: line-through;
+}

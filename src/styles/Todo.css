@@ -1,0 +1,38 @@
+.todo-card {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  max-width: 370px;
+  align-items: center;
+  background-color: rgba(0, 10, 207, 0.5);
+  position: relative;
+  z-index: 3;
+}
+
+.todo-card .separator {
+  height: 3px;
+  width: 80%;
+  background-color: rgba(0, 0, 0, 0.431);
+}
+
+.todo-id {
+  position: absolute;
+  z-index: 1;
+  right: 10px;
+}
+
+.todo-card .status {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.344);
+  bottom: -10px;
+  right: 10px;
+}
+
+.todo-card .status.done {
+  color: rgb(99, 234, 99);
+}
+
+.todo-card .status.not-done {
+  color: rgba(255, 2, 2);
+}
